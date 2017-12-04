@@ -1,10 +1,11 @@
-\textbf{\title{\large{Simplicity}}}
-
+\begin{center}
+\section{Simplicity}
+\end{center}
 \hspace{1em}For the readability and writability of Kotlin it is much easier than Java. The declaring of variables almost looks like javascript, and to declare and object the `new' keyword isn't needed. Kotlin takes all of the code that can be written in Java and condenses it down in an almost shorthand-like form.
 
-\section*{Writability}
+\subsection{Writability}
 \hspace{1em}As stated earlier Kotlin takes a lot less code than Java does. For instance in Java to code a Plain Old Java Object (POJO) with getters, setters, equals(), hascode(), toString(), and copy it takes more than twenty lines of code. With Kotlin we can simply make the POJO in one line: \texttt{data class Person(var name: String, var age: Int)}. With the person class in place a person can be created like so: \texttt{val jack = Person(name = "Jack", age = 20)}. There is no need to use the `new' keyword to create a POJO. Using the Java classes also gives it an advantage of being able to use all the things that Java can use such as maps and arraylists, so it brings the familiarity of Java in being able to write it easily. There are some more extreme sides to Kotlin. In Kotlin you cannot override a class or function unless it's open. Similarly you cannot inherit anything from another class unless it is open. A Good point brought up by Robert C. Martin is that Kotlin is less flexible because its a more statically typed language, even more so than Java, and it puts error checking that would normally be done by the programmer onto the language itself. Although Kotlin manages to compress a lot of unnecessary lines, as stated above, making it a lot easier to write it has some other unfavorable characteristics.
 
-\section*{Readability}
+\subsection{Readability}
 \hspace{1em}Reading Kotlin code is a little bit trickier than writing it. From the code above, \texttt{data class Person(var name: String, var age: int)} it is not clear that this is creating a POJO unless that information is known beforehand. Also many languages use the `?' ternary operator, and so does Kotlin, but it also uses it for its Null Safety feature. So depending on the context it could become a little confusing. There are some things that bring a little familiarity to a programmer, for example to declare variables the `var' keyword is used. This is the same exact way local variables are created in C\# and Javascript. In order to make constants easier to read they have allowed underscores to be used, for example if we have a credit card number it could be declared as: \\$val$ $creditCardNumber = 1234\_5678\_9012\_3456L$ where L indicates that it is of type long and val is the equivalent of `final' in Java. The creators of Kotlin have also taken a page out of python's book by using the keyword `in.' This makes the foreach loop more readable: \texttt{for(c in arr)}. Despite the few things that Kotlin does that make it confusing at times it reads a lot like other languages would. It takes on a lot of characteristics that Javascript, Java, and Python have. In doing so it is easier to read than Java.
 

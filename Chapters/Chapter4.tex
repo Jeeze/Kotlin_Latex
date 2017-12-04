@@ -1,5 +1,7 @@
-\textbf{\title{\normalsize{Definiteness}}}
-\section*{Syntax and Semantics}
+\begin{center}
+\section{Definiteness}
+\end{center}
+\subsection{Syntax and Semantics}
 \hspace{1em} If we compare the syntax of Kotlin to Java almost everything is entirely new. Instead of declaring a variable with its data type, like a lot of the strongly typed languages, Kotlin starts the declaration with either val or var. Val means that the value the variable takes on is immutable while var is mutable. One plain example in how things are declared is the declaration of primitive arrays, that is arrays that are not declared using the Array class: \textit{val x: IntArray = intArrayOf(1, 2, 3)}; which means the value x, which is immutable, is an integer array containing the values 1, 2, and 3. Values from this array can be called as expected, x[0]. Also all of the types (int, boolean, double, etc) are declared after the variable name. However, as stated previously there are times where we do not need to declare the type of the variable because the compiler can infer. 
 
 \hspace{1em} Kotlin also uses the `?' operator to check if something will output a null, or simply to box variables into say the java.lang.Integer class: \textit{val bob?.department} or \textit{val a: Int? = 1} respectively. The first one checks to see if bob is in a department, if he is it will return the value of the department otherwise it will return null. For the second one it is checking to see if the following number can safely be boxed into the java.lang.Integer class. Another useful syntax is when an argument has to call upon a range of numbers, \textit{if(c in 0..9)}. When there's an argument that is searching through a range of numbers it simply means that if the c is in the range from zero to nine, then execute. The range can be used in any conditional statement. `!in' could also be used which is the negation of the `in.'

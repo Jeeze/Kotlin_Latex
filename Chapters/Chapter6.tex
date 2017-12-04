@@ -1,3 +1,9 @@
-\textbf{\title{\normalsize{Program Verification}}}
-\section{Correctness}
-[talk about assertions and what not. I believe you can also use maven/JUnit]
+
+\begin{flushleft}
+\section*{Program Verification}
+\end{flushleft}
+
+\section*{Correctness}
+\hspace{1em}To keep Kotlin correct it has many functions and operators that check the code. One in particular is called assert. What does is it checks if the values passed into it are what is expected of the code. For example, \textit{fun assert(this == that)} returns a boolean value based on whether or not this is the same value as that. Assert can also be applied on booleans directly like so, \textit{fun assert(value: Boolean)}, or a message can be returned as well, \textit{fun assert(value: Boolean, lazyMessage: () -$>$ Any = \{ ``Assertion failed" \})}. Besides assertions Kotlin also has a few operators that make sure things are running smoothly like the null safety operator, `!!', but it also have the `is' operator. This operator can check whether or not a variable is what it's suppose to be and can be used as such, \textit{if (x is String)\{print(x)\}}. 
+
+\hspace{1em}Something not in the language, but that can also be used with the language, is the unit tester JUnit. With Junit a bunch of assertions can be made to check the correctness of the code. JUnit introduces methods such as, assertTrue, assertEquals, or assertFalse, and they function exactly as one would think. 

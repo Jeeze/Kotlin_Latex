@@ -1,0 +1,36 @@
+\section{Grading}
+
+\subsection{Efficiency}
+Grade: B-
+\\
+The Efficiency of the JIT compiler is high and as we can see from the graphics the compile time works quite well with Kotlin as oppose to Java. Another thing that makes Kotlin efficient is the ability to use the garbage collector to free up memory. One thing that I found lacking within the efficiency is the automatic casting. When automatically casting it could hide some casting errors if any exist causing problems down the road.
+
+\subsection{Simplicity}
+Grade: A-
+\\
+The language is very simple. Setting up a POJO for Kotlin is far simpler than in Java and to make objects there's no need to call `new.' The readability is improved by allowing underscores in numerical values for separation. Robert C. Martin brings up a good point about how it is less flexible though because it is more statically typed which causes the language itself to be geared more towards error checking rather than the programmer checking for errors. I believe as he does that there is a line that needs to be drawn somewhere. Putting more error checking into the languages that we use makes coding with that language rather cumbersome and can add unneeded overhead to the overall application. 
+
+\subsection{Orthogonality}
+Grade: A
+\\
+Since Kotlin uses everything that Java does it has decent orthogonality. It has many structures which are concisely defined and can be used with any data type. I did not find anything that would bring down its orthogonality like the examples we have seen in class, that is, where C doesn't allow [fill this in I can't think of the example right now. It's in a slide somewhere]. Kotlin is very consistent on how to make structurs making only one way to do write structures. This helps a lot with the simplicity of the language. 
+\subsection{Definiteness}
+Grade: C+
+The syntax can be a bit confusing at times depending on the context. For example `?' operator is used to check for whether or not something can be null, if then statments, and to safely box variables into things like the java.lang.Integer class. There are other things that were more efficient than Java. The coversions are a lot easier in Kotlin as far as writing them in code, and writing functions doesn't require stating a return value making those easier to write as well. Overall writing Kotlin is far easier than writing Java, but sometimes the semantics aren't always clear. 
+
+\subsection{Reliability}
+Grade: B
+\\
+Although the null safety could be confused for something else, the `?' operator, I found that it can be quite useful in the reliability of the language. Where Java would get a compiler error for a NullPointerException Kotlin will not. This can be good if at somepoint our variable is allowed to take on a null value. With the null safety Kotlin ups its game in reliability making it just a little more reliable than Java in that regard. The way that Kotlin handles exceptions is also better than Java because Kotlin does not have checked exceptions. This cuts down on the overall overhead of the application making it more efficient than Java.  
+
+\subsection{Correctness}
+Grade: B+
+\\
+The correctness of Kotlin emulates that of Java. Java can use the assert but it can be enabled and disabled per class. Asserts in my experience are usually used for testing purposes, like test driven development, so it would make sense to be able to enable or disable them. With Kotlin they are always evaluated. The makers of Kotlin believe that being able to disable assert statments believes that the design of the Java assert statement is problematic because if there is code in that assert statement that has side-effects to the program then disabling them would cause a problem. I do agree with that statement, however I still believe that I should be able to disable it if I feel like it without having to comment the statement out. Other than that Kotlin is able to tap into the powerful tools of JUnit and Maven making the correctness of programming it go up since this opens up a range of tests that could be done with Kotlin.
+
+\subsection{Abstraction Facilities}
+
+\subsection{Portability}
+Grade: A
+\\
+Kotlin is very portable. Since it can be converted into Java bytecode it can be put onto any computer with the appropriate Java libraries installed. The machine itself doesn't have to read the code and act on it because the JVM is taking care of the interpretation of the Java bytecode. This make Kotlin able to work on almost any machine. 

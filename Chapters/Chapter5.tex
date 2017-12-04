@@ -1,12 +1,15 @@
-\textbf{\title{\normalsize{Reliability}}}
+
+\begin{center}
+\section{Reliability}
+\end{center}
 
 \hspace{1em} Kotlin has just as much reliability as Java does and more. With Kotlin there's the Null safety feature which protects us against the null pointer value exception. It also uses the try catch blocks as well as the throwable Java class. 
 
-\section*{Null Safety}
+\subsection{Null Safety}
 
 \hspace{1em}Kotlin tries to get rid of Java's NullPointerException error. To do this Kotlin explicitly tells the system which references can hold null. It does this with the `?' ternary operator. For example, \textit{var b: String? = "abc"}, if at any point the variable b becomes null it's ok because it has been allowed to be nullable. However, this does not mean that error checking still doesn't have to be done. If b does happen to become null and later on in the program it's using b.length, then the program must first check if b is null before performing the length command. This can be done like so, \textit{if(b != null) b.length)}. Although instead of checking it to be null there's another operator, `!!'. This operator says that the variable has to strictly be non-null to perform the operation, otherwise it returns a NullPointerException.
 
-\section*{Exceptions}
+\subsection{Exceptions}
 
-\hspace{1em}
+\hspace{1em} One thing that Kotlin improves upon in its language is that it does not have checked exceptions. This cuts down on the code that is needed to handle exceptions and also lessens the overhead of checked exceptions. As expected Kotlin also has keywords such as, `throw' so that exception objects can be thrown. It also has the try catch blocks for catching and handling exceptions.
 
